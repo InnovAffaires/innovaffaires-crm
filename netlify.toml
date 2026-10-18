@@ -1,0 +1,16 @@
+# Réglages de publication d'InnovAffaires (site + CRM). Ne pas modifier.
+#
+# À chaque publication, Netlify lance « construire.mjs », qui ouvre « paquet.tgz »
+# et reconstitue le dossier « public » (le site et le CRM) et le dossier
+# « netlify/functions » (le serveur du CRM).
+
+[build]
+  command = "node construire.mjs"
+  publish = "public"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"

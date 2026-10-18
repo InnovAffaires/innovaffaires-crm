@@ -1,0 +1,13 @@
+{
+  "name": "innovaffaires-site-et-crm",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Site www.innovaffaires.com et CRM InnovAffaires (/crm/). Voir LISEZ-MOI.md.",
+  "scripts": {
+    "build": "node construire.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
